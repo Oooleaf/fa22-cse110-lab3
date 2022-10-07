@@ -2,16 +2,22 @@
 <html lang="en">
 
   <head>
+    <meta charset="utf-8" />
     <title>Meeting Minutes</title>
+    <link rel="icon" type="images/x-icon" href="favicon.ico" />
+    
   </head>
+
   <body>
     <!--a title-->
-    <h1><center><b>Carrot Timer First Brainstorm</b></center></h1>
+    <h1><b>Carrot Timer First Brainstorm</b></h1>
     <!--subtitle the topic of meeting-->
-    <h3><center><strong>This is a recording notebook for meeting minutes</strong></center></h3>
+    <h3><strong>This is a recording notebook for meeting minutes</strong></h3>
     <!--subtitle of date-->
-    <h3><center>Date: 10-6-2022 Time: 18:00 - 19:00</center></h3>
-    <img  
+    <h3>Date: 10-6-2022 Time: 18:00 - 19:00</h3>
+    
+    <div class="image">
+        <img 
         src = "https://i.pinimg.com/564x/52/2b/e9/522be9963ce73b6248d327f590fafbc5.jpg"
         width ="500"
     >
@@ -36,20 +42,126 @@
     <!--agenda of what the meeting will cover-->
     <div class = "agenda">
         <h4>Agenda:</h4>
+        <ol>
+            <li><i>Greet</i> each other</li>
+            <li>Introduce yourself</li>
+            <li>Schedule</li>
+        </ol>
+    </div>
+    <hr>
+    <!--things that were unfinished business from last meeting-->
+    <div class = "unfinished part">
+        <h4>Unfinished Part:</h4>
         <ul>
-            <li>greet each other</li>
-            <li>introduce yourself</li>
-            <li>schedual</li>
+            <li>When do we meet next time</li>
+            <li>
+                <span>
+                  <a href="https://lettucemeet.com/l/GAWlB" target="fill the schedule">Fill this schedule</a>
+                </span>
+              </li>
+            <li>Any questions?</li>
         </ul>
     </div>
 
-    <!--things that were unfinished business from last meeting-->
     <!--any miscellaneous comments / questions / concerns that anyone would like to bring up-->
+    <nav class="questions">
+        <ol>
+            <li class="question1"><a href="#">My Question</a></li>
+            <li class="question2"><a href="#">Your Question</a></li>
+            <li class="question3">Final Question</li>
+        </ol>
+    </nav>
+
+    
+    <section>
+        <h2>Note--------------------------:)</h2>
+        <p>We have another meeting on this <strong>Friday</strong></p>
+
+        <details>
+            <summary>Again when do we meet next time?</summary>
+            This Friday.
+        </details>
+        
+
+    </section>
     <!--pictures of any diagrams / architecture / things that were presented-->
     <!--audio recording the meeting-->
     <!--video recording the meeting-->
+    <details>
+        <summary>Who is Carrot</summary>
+        It's Shuo.
+    </details>
+    <form action="" method="get" class="enter carrot name">
+        <div class="enter name">
+          <label for="name">Enter who is carrot: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        
+        <div class="submit carrot">
+          <input type="submit" value="SUBMIT">
+        </div>
+    </form>
+    <hr>
+    <form action="#">
+        <fieldset>
+          <legend>Do you remember when do we have next meeting?</legend>
+          <input type="checkbox" id="chbx" name="agree" value="Yes!" />
+          <label for="chbx">I remember!</label>
+          <br>
+          <input type="checkbox" id="chbx" name="very agree" value="super yes!" />
+          <label for="chbx">I did remember.</label>
+        </fieldset>
+    </form>
+    <hr>
+    <label for="feedback">Give me some feedback:</label>
+    <br>
+    <textarea id="feedback" name="feedback" 
+                rows="5" cols="33">
+    I would suggest that...
+    </textarea>
+    <hr>
+    <label for="myChoice">Choose a time:</label>
+    <input list="choices" id="myChoice" name="myChoice" />
+    <datalist id="choices">
+        <option value="6 PM"></option>
+        <option value="9 PM"></option>
+    </datalist>
+    
+    <select name="timing">
+        <option value="first">30 mins</option>
+        <option value="second" selected>60 mins</option>
+        <option value="third">more than 1 hour</option>
+    </select>
 
-    <br><!--this thing i don't know-->
+    <button class="ugly button"
+            type="button">
+            Bye bye~
+    </button>
+    <hr>
+    <h3>This is waterdrop sound</h3>
+    <p>It is very soft. Raise your volume to hear it.</p>
+    <video src="waterdrop.m4a" controls>
+      good
+    </video>
+    <br>
+    <h3>This is a sea world video</h3>
+    <video src="seaworld.mp4" controls>
+      Your browser does not support the video tag.
+    </video>
+    <hr>
+    <header class="page-header">
+        <h1>End Meeting!</h1>
+    </header>
+    
+    <main>
+        <p>See you guys <em>NEXT</em> time~</p>
+    </main>
+
+    <br><!--break line-->
   
   </body>
+  <footer>
+    <p>© 2022 Shuo</p>
+  </footer>
+    
 </html>
